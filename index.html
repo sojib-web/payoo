@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <header>
+        <nav class="flex justify-center items-center mt-28">
+          <div
+            class="mt-10 relative flex justify-center items-center w-9/12 mb-10"
+          >
+            <img class="w-48 absolute" src="./assets/bg.png" alt="" />
+            <img class="w-16" src="./assets/Group.png" alt="" />
+          </div>
+        </nav>
+      </header>
+
+      <!-- login section -->
+      <div class="">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Acount Number</span>
+                </label>
+                <input
+                  id="Account_number"
+                  type="number"
+                  placeholder="type your number"
+                  class="input input-bordered"
+                  required
+                  value="01375383718"
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">PIN</span>
+                </label>
+                <input
+                  id="Account_PIN"
+                  type="text"
+                  value="1234"
+                  placeholder="type your PIN"
+                  class="input input-bordered"
+                  required
+                />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover"
+                    >Forgot password?</a
+                  >
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button id="login_btn" class="btn btn-primary w-full">
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
